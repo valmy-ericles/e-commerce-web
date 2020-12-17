@@ -1,6 +1,6 @@
 import axios from 'axios'
 import Cookie from 'js-cookie'
-import ApiData from '../dtos/apiData'
+import ApiData from '../dtos/ApiData'
 
 const api = axios.create({
   baseURL: 'http://localhost:3000'
