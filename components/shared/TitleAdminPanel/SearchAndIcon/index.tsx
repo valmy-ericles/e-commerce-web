@@ -13,7 +13,7 @@ import { useDispatch } from 'react-redux';
 import { 
   setSearch as setSearchRedux,
   clearSearch 
-} from '../../../../store/modules/amdin/shared/search/reducer';
+} from '../../../../store/modules/admin/shared/search/reducer';
 
 import { useRouter } from 'next/router';
 

@@ -40,7 +40,7 @@ const Pagination: React.FC<Meta> = ({ page, length, total, total_pages }) => {
         />
 
         {
-          pagination.map(({ item, index }) => {
+          pagination.map((item, index) => (
             item === '...' ? '...' : (
               <StyledButton
                 key={index}
@@ -50,7 +50,7 @@ const Pagination: React.FC<Meta> = ({ page, length, total, total_pages }) => {
                 onClick={() => handlePageClick(item)}
               />
             )
-          })
+          ))
         }
 
         <StyledButton

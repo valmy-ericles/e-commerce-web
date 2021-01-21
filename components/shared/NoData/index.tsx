@@ -8,7 +8,7 @@ interface NoDataProps {
 
 const NoData: React.FC<NoDataProps> = ({ message = 'Não há dados cadastrados ou encontrados =(' }) => {
   return (
-    <div className={styles.admin_page}>
+    <div className={styles.admin_panel}>
       { message }
     </div>
   )

@@ -7,12 +7,13 @@ import styles from '../../../styles/AdminTitle.module.css';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 interface TitleAdminPanelProps {
-  icon?: IconProp,
   title: String,
   path: String,
+  icon?: IconProp,
+  newPath?: string,
 }
 
-const TitleAdminPanel: React.FC<TitleAdminPanelProps> = ({ icon, title, path }) => {
+const TitleAdminPanel: React.FC<TitleAdminPanelProps> = ({ icon, title, path, newPath = '#' }) => {
   return (
     <Row className="mt-4">
       {
@@ -23,7 +24,7 @@ const TitleAdminPanel: React.FC<TitleAdminPanelProps> = ({ icon, title, path }) 
             </Col>
 
             <Col lg={{ span: 4, offset: 2 }} xs={8}>
-              <SearchAndIcon icon={icon} />
+              <SearchAndIcon icon={icon} newPath={newPath} />
             </Col>
           </>
          :
